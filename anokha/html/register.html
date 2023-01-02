@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>ANOKA TECH FEST 2023</title>
+    <link rel='icon' href='./photos/logo1.png'>
+    <style>
+      @font-face {
+        font-family: 'font1';
+        src: url('./photos/font1.ttf');
+}
+body{
+	background-image:url("http://cdn9.dissolve.com/p/D160_360_009/D160_360_009_0004_600.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+height:100vp;
+background-position: center center;
+background-attachment: fixed;
+      }
+      .navbar{ overflow: hidden;
+        float: none;
+        margin: 20px;
+      }
+      .navbar ul{
+        list-style: none;
+      }
+      .navbar li a{
+        float:right;
+        color:rgb(237, 232, 239);
+        text-align: center;
+        font-style: none;
+        font-family: font1;
+        font-size: 25px;
+        text-decoration: none;
+        padding: 14px 16px;
+      }
+      .navbar a:hover{
+        color: black;
+        background-color: aliceblue;
+      }
+.box{
+ 	width:900px;
+	height:1400px;
+	background:#222;
+border-radius:10px;
+}
+    </style>
+  </head>
+  <header>
+    <nav class="navbar">
+      <ul>
+	<li><a href="./html/contact.html">Contact</a></li>
+	<li><a href="./html/login.html">Log In</a></li>
+        <li><a href="./html/register.html">Register Now!</a></li>
+        <li><a href="./html/about.html">About</a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li style="float: left;"><img src="https://s3.amazonaws.com/bizzabo.users.files/amZhkLRT0avvqaZvO2OA_Amrita.png" width="200px"></li>
+      </ul>
+    </nav>
+  </header>
+<body>
+<center><div class="box"><br><br>
+<div class="gen" style="color:white">
+<form method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+
+<p>
+<label>Name
+<input type="text" name="student_name" required>
+</label> 
+</p>
+<p>
+<label>Name of the College
+<input type="text" name="student_name" required>
+</label> 
+</p>
+<p>
+<label>Roll number
+<input type="number" name="student_name" required>
+</label> 
+</p>
+
+<p>
+<label>Department</label>
+  <select id="department" name="Department">
+    <option value="Cyber">Cyber</option>
+    <option value="CSE">CSE</option>
+    <option value="AI">AI</option>
+    <option value="Data Science">Data Science</option>
+    <option value="EEE">EEE</option>
+    <option value="Mechanical">Mechanical</option>
+    <option value="Civil">Civil</option>
+    <option value="ARE">ARE</option>
+  </select>
+</p>
+
+<p>
+<label>Phone 
+<input type="tel" name="phone_number">
+</label>
+</p>
+
+<p>
+<label>Email id
+<input type="email" name="email_address">
+</label>
+</p>
+
+<p>
+<label>Date of Birth
+<input type="date" name="time" required>
+</label>
+</p>
+	
+
+<fieldset>
+<legend>Events</legend>
+<p><label> <input type="radio" name="events" required value="car"> Code wars </label></p>
+<p><label> <input type="radio" name="events" required value="van"> Poly code glot </label></p>
+<p><label> <input type="radio" name="events" required value="tuktuk"> Rocket Science Quiz</label></p>
+<p><label> <input type="radio" name="events" required value="tuktuk"> Robowarz 3.0 </label></p>
+<p><label> <input type="radio" name="events" required value="tuktuk"> CTF </label></p>
+<p><label> <input type="radio" name="events" required value="tuktuk"> AI ADEPT </label></p>
+<p><label> <input type="radio" name="events" required value="tuktuk"> Matholympics </label></p>
+<p><label> <input type="radio" name="events" required value="tuktuk"> Six Siege </label></p>
+<p><label> <input type="radio" name="events" required value="tuktuk"> Chempiher </label></p>
+</fieldset>
+
+<fieldset>
+<legend>Workshops</legend>
+<p><label> <input type="checkbox" name="ws" value="baby"> Data Science </label></p>
+<p><label> <input type="checkbox" name="ws" value="wheelchair">Cyber Security </label></p>
+<p><label> <input type="checkbox" name="ws" value="tip"> Spectron</label></p>
+<p><label> <input type="checkbox" name="ws" value="tip"> CANSAT </label></p>
+<p><label> <input type="checkbox" name="ws" value="tip"> PCB Design </label></p>
+<p><label> <input type="checkbox" name="ws" value="tip"> Python </label></p>
+</fieldset>
+
+<br>
+
+<label>Upload scanned ID <br>
+<input type="file" id="myFile" name="filename">
+</label>
+
+<br>
+<br>
+
+<legend> Do you want to recieve emails regarding anokha? </legend>
+<label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label>
+
+<p>
+<label>Requests</label><br>
+<textarea name="message" rows="10" cols="30"></textarea>
+</p>
+
+
+<p><a href="html\notice.html"><button>REGISTER</button></a></p></center>
+
+</div>
+</form>
+</div>
+<footer style="color:black;background-color:white;font-size:30px;margin-top:50px"><div class="gen2"><center>
+© Amrita Vishwa Vidyapeetham ,Coimbatore <br>
+</footer></center></div>
+
+</body>
+</html>
