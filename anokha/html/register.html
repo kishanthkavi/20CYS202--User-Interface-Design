@@ -64,7 +64,7 @@ border-radius:10px;
 
 <p>
 <label>Name
-<input type="text" name="student_name" required>
+<input type="text" name="student_name" id="name" onchange="validate()"required>
 </label> 
 </p>
 <p>
@@ -94,13 +94,13 @@ border-radius:10px;
 
 <p>
 <label>Phone 
-<input type="tel" name="phone_number">
+<input type="tel" name="phone_number" id="phoneNo" onchange="validatePhoneNo()" required>
 </label>
 </p>
 
 <p>
 <label>Email id
-<input type="email" name="email_address">
+<input type="email" name="email_address" id="Email" onchange="validateEmail()" required>
 </label>
 </p>
 
@@ -158,10 +158,46 @@ border-radius:10px;
 <p><a href="html\notice.html"><button>REGISTER</button></a></p></center>
 
 </div>
+<script>
+function validate() 
+{
+  var RegExpression = /^[a-zA-Z]*$/; 
+  var name = RegExpression.test (document.getElementById("name").value);
+  if (!name) {
+  window.alert("Enter valid name");
+  document.getElementById("name").focus()
+  }
+  console.log("name:" + name);
+}
+function validateEmail()
+{
+  var regex = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/;
+  var Email = regex.test (document.getElementById("Email").value);
+  if(!Email){
+  window.alert("Enter valid email id");
+  document.getElementById("Email").focus()
+  }
+}
+function validatePhoneNo() 
+{
+  let PhoneNo = document.getElementById("PhoneNo").value;
+  if(!(PhoneNo.length==10))
+  {
+  window.alert("Enter valid Phone Number");
+  document.getElementById("PhoneNo").focus()
+  }
+}
+	
+</script>
 </form>
 </div>
-<footer style="color:black;background-color:white;font-size:30px;margin-top:50px"><div class="gen2"><center>
-© Amrita Vishwa Vidyapeetham ,Coimbatore <br>
+<footer style="color:black;background-color:white;font-size:30px;margin-top:50px"><div class="gen2"><center><footer>
+  Copyright © Kishanth K 
+     <br> II B.Tech CSE(CYS) 
+     <br> Part of 20CYS202 - User Interface Design 
+     <br> Amrita Vishwa Vidyapeetham, Coimbatore
+  </p>
+</footer> <br>
 </footer></center></div>
 
 </body>
